@@ -22,7 +22,7 @@ async function getUserDetails() {
 
 	// Fetch data from the API
 	try {
-		const response = await fetch('https://api.github.com/users/vijay3014');
+		const response = await fetch('https://api.github.com/users/darshan0102');
 		if (response.ok) {
 			const data = await response.json();
 

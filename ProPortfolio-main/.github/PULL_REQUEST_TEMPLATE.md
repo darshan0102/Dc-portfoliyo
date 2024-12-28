@@ -11,7 +11,7 @@ Remove this line and tell us how the code was tested.
 Before you create this PR, confirm all the requirements listed below by checking the checkboxes `[x]`:
 
 
--   [ ] I have checked there aren't other open [Pull Requests](https://github.com/vijay3014/ProPortfolio/pulls) for the same update/change.
+-   [ ] I have checked there aren't other open [Pull Requests](https://github.com/darshan0102/Dc-portfoliyo/pulls) for the same update/change.
 -   [ ] I have made corresponding changes to the documentation.
 -   [ ] I have tested the code before submission.
 -   [ ] I have formatted the code . (You can use any html,css beautifier)
