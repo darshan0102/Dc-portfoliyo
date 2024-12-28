@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="theme-color" content="#0e1525" />
+	<title>Darshan M chauhan | Portfolio</title>
+
+	<!-- Bootstrap CDN -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+	<!-- FontAwsome CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- Custom css -->
+	<link rel="stylesheet" href="assets/css/styles.css" />
+	<link rel="stylesheet" href="assets/css/responsive.css" />
+	<link rel="stylesheet" href="assets/css/animation.css">
+	<link rel="icon" type="image" id="favicon" href="assets/image/images.png">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+	<!-- scroll to top -->
+	<button type="button" class="btn btn-warning btn-floating btn-lg" id="btn-back-to-top" title="scoll to top button">
+		<i class="fas fa-arrow-up"></i>
+	</button>
+	<!-- exit scroll to top -->
+	<!-- loading animation -->
+	<div id="loader_wrapper" class="loader_wrapper">
+		<div class="loader">
+			<div class="bounce1"></div>
+			<div class="bounce2"></div>
+			<div class="bounce3"></div>
+			<div class="logo">
+				<img src="./assets/image/images.png" alt="logo" />
+			</div>
+		</div>
+	</div>
+	<!-- exit loading animation -->
+	<!-- Navigation Bar -->
+	<!-- Navbar section -->
+	<header class="header_wrapper">
+		<nav class="navbar navbar-expand-lg fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<img src="./assets/image/images.png"
+						class="img-fluid" alt="logo" width="50px" height="50px" />
+				</a>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fas fa-stream navbar-toggler-icon"></i>
+				</button>
+
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+					<ul class="navbar-nav menu-navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#home">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#services">Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#projects">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#certification">Certificates</a>
+						</li>
+						<!-- <li class="nav-item mt-3 mt-lg-0">
+							<a class="main-btn" href="#contact">Hire Me</a>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- Navbar section exit -->
+
+	<!-- Banner section -->
+	<section id="home" class="banner_wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center text-md-start align-items-center">
+					<h2>Hello <span class="waver">👋</span></h2>
+					<h1>
+						I'm <span class="text-animate">Darshan M chauhan</span><br />
+						<span class="typerjs"></span>
+					</h1>
+					<div class="mt-4">
+						<a class="main-btn" href="assets/image/Drashan Prof CV.pdf"
+							download="Drashan M chauhan.pdf">Download CV</a>
+					</div>
+					<canvas></canvas>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Banner section exit -->
+
+	<!-- About section -->
+	<section id="about" class="about_wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 mb-4 mb-lg-0">
+					<img src="https://ik.imagekit.io/Vs30u14/CMD.jpg?updatedAt=1735386177231"
+						class="img-fluid rounded-3" alt="About Us" />
+				</div>
+				<div class="col-lg-7 ps-lg-5 text-center text-lg-start">
+					<div class="my-3 my-lg-0">
+						<span class="subtitle">Who am I?</span>
+						<h2>About Me</h2>
+						<p>
+							I am a recent 12th-grade graduate with a strong interest in backend development and coding. I have gained hands-on experience in languages like JavaScript, and databases and am eager to apply my skills in real-world projects. Passionate about problem-solving and optimizing systems, I aim to grow as a backend developer and contribute to impactful solutions.
+						</p>
+					</div>
+					<div class="pt-4">
+						<ul class="nav nav-pills justify-content-center justify-content-lg-between mb-3" id="pills-tab"
+							role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link active" id="pills-skill-tab" data-bs-toggle="pill"
+									data-bs-target="#pills-skill" type="button" role="tab" aria-controls="pills-skill"
+									aria-selected="true">
+									Skills
+								</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="pills-Tools-tab" data-bs-toggle="pill"
+									data-bs-target="#pills-Tools" type="button" role="tab" aria-controls="pills-Tools"
+									aria-selected="false">
+									Tools
+								</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="pills-socials-tab" data-bs-toggle="pill"
+									data-bs-target="#pills-socials" type="button" role="tab"
+									aria-controls="pills-socials" aria-selected="false">
+									Socials
+								</button>
+							</li>
+						</ul>
+						<div class="tab-content" id="pills-tabContent">
+							<div class="tab-pane fade show active" id="pills-skill" role="tabpanel"
+								aria-labelledby="pills-skill-tab">
+								<div class="d-flex justify-content-center justify-content-md-start flex-wrap gap-3">
+									<div class="card">
+										<img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+											alt="c-logo" title="c" />
+									</div>
+									<div class="card">
+										<img src="https://img.icons8.com/?size=100&id=40669&format=png&color=000000"
+											alt="c++-logo" title="c++" />
+									</div>
+									<div class="card">
+										<img src="https://www.svgrepo.com/show/452045/js.svg" alt="js-logo"
+											title="js" />
+									</div>
+									<div class="card">
+										<img src="https://www.svgrepo.com/show/473731/mysql.svg"
+											style="filter: invert(100%);" alt="mysql-logo" title="mysql" />
+									</div>
+									<div class="card">
+										<img src="https://www.svgrepo.com/show/373845/mongo.svg" alt="mongodb-logo"
+											title="mongodb" />
+									</div>
+									<div class="card">
+										<img src="https://www.svgrepo.com/show/303658/nodejs-1-logo.svg" alt="node-logo"
+											title="nodejs" />
+									</div>
+									<div class="card">
+
+										<img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/express-js-11217637-9200641.png?f=webp&w=256"
+											alt="Express.js-logo" title="Express.Js" />
+									</div>
+									<div class="card">
+										<img src="https://www.svgrepo.com/show/354478/typescript-icon.svg"
+											alt="typescript-logo" title="typescript">
+									</div>
+									<div class="card">
+										<img src="https://www.svgrepo.com/show/452228/html-5.svg" alt="html-logo"
+											title="HTML" />
+									</div>
+									<div class="card">
+										<img src="https://www.svgrepo.com/show/373535/css.svg" alt="css-logo"
+											title="CSS" />
+									</div>
+									<div class="card">
+										<img src="https://img.icons8.com/?size=100&id=vEiU8UeAmv0x&format=png&color=000000" alt="SASS-logo"
+											title="SASS" />
+									</div>
+									<div class="card">
+										<img src="https://www.svgrepo.com/show/333609/tailwind-css.svg"
+											style="filter: invert(100%);" alt="tailwind-css" title="tailwind-css" />
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="pills-socials" role="tabpanel"
+								aria-labelledby="pills-socials-tab">
+								<div class="d-flex justify-content-center justify-content-md-start flex-wrap gap-3">
+									<a href="https://github.com/darshan0102" target="_blank"
+										rel="noopener noreferrer">
+										<div class="card">
+											<img src="https://www.svgrepo.com/show/503359/github.svg" alt="github-logo"
+												style="filter: invert(100%);" title="github" />
+										</div>
+									</a>
+									<a href="https://www.linkedin.com/in/akashrchandran" target="_blank"
+										rel="noopener noreferrer">
+										<div class="card">
+											<img src="https://www.svgrepo.com/show/475661/linkedin-color.svg"
+												alt="linkedin-logo" title="linkedin" />
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="pills-Tools" role="tabpanel"
+								aria-labelledby="pills-Tools-tab">
+								<div class="d-flex justify-content-center justify-content-lg-start flex-wrap gap-3">
+									<div class="card">
+										<img src="https://www.svgrepo.com/show/374171/vscode.svg" alt="vscode-logo"
+											title="vscode" />
+									</div>
+									<div class="card">
+										<img src="https://www.svgrepo.com/show/503359/github.svg" alt="github-logo"
+											style="filter: invert(100%);" title="github" />
+									</div>
+									<div class="card">
+										<img src="https://www.svgrepo.com/show/452077/npm.svg" alt="npm-logo"
+											title="npm" />
+									</div>
+									<div class="card">
+										<img src="https://www.svgrepo.com/show/354202/postman-icon.svg"
+											alt="postman-logo" title="postman" />
+									</div>
+									<div class="card">
+										<img src="https://images.crunchbase.com/image/upload/c_pad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/gkq3dkkfkec8edd6fuay" alt="render-logo"
+											title="Render" />
+									</div>
+									<div class="card">
+										<img src="https://www.svgrepo.com/show/353869/heroku-icon.svg" alt="heroku-logo"
+											title="Heroku" />
+									</div>
+									<div class="card">
+										<img src="https://www.svgrepo.com/show/475686/stackoverflow-color.svg"
+											alt="stackOverflow-logo" title="stackoverflow" />
+									</div>
+									<div class="card">
+										<img src="https://www.svgrepo.com/show/306921/vercel.svg" alt="vercel-logo"
+											style="filter: invert(100%);" title="vercel" />
+									</div>
+									<div class="card">
+										<img src="https://www.svgrepo.com/show/376339/netlify.svg"
+											alt="Netlify-logo" title="Netlify" />
+									</div>
+									<div class="card">
+										<img src="https://www.svgrepo.com/show/378781/chrome.svg" alt="chrome-logo"
+											title="chrome" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- About section exit -->
+
+	<!-- Github srction start -->
+	<section id="github" class="github_wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center mb-4">
+					<span class="subtitle">Git profile</span>
+					<h2>My Github Stats</h2>
+				</div>
+				<div class="col-lg-5 mb-5 mb-lg-0 text-center">
+					<img class="img-fluid rounded-circle" alt="git profile pic" height="250px" width="250px"
+						id="github_avatar" />
+				</div>
+				<div class="col-lg-7 ps-lg-5 text-center text-lg-start">
+					<div class="my-3 my-lg-0">
+						<h3 id="github_name"></h3>
+						<span class="subtitle" id="github_username"></span>
+						<p id="github_about"></p>
+					</div>
+					<div class="d-flex flex-column bd-highlight mb-3">
+						<div class="d-flex flex-row justify-content-between">
+							<h3 id="github_followers">- Followers</h3>
+							<h3 id="github_following">- Following</h3>
+						</div>
+						<div class="d-flex flex-row justify-content-between">
+							<h3 id="github_repo">- Repos</h3>
+							<h3 id="github_gist">- Gists</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mt-5 text-center">
+				<a class="main-btn" target="_blank" href="https://github.com/darshan0102"
+					rel="noopener noreferrer">Visit Github</a>
+			</div>
+		</div>
+	</section>
+	<!-- Github section exit -->
+
+	<!-- Services section -->
+	<section id="services" class="services_wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center mb-4">
+					<span class="subtitle">What can I do for you</span>
+					<h2>My Services</h2>
+					<p>
+						Here are a few things I have prior experience
+						building and have enjoyed creating in the past.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="card">
+						<div class="card-body text-md-start text-center">
+							<img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-automation-automation-technology-flaticons-flat-flat-icons-16.png"
+								alt="service" class="img-fluid mb-4" />
+							<h3>Automation</h3>
+							<p>
+								Create automation scripts using Javascript to
+								simplify complicated task.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="card">
+						<div class="card-body text-md-start text-center">
+							<img src="https://img.icons8.com/external-xnimrodx-blue-xnimrodx/64/000000/external-web-development-website-development-xnimrodx-blue-xnimrodx-2.png"
+								alt="service" class="img-fluid mb-4" />
+							<h3>Website Development</h3>
+							<p>
+								Developing scalable and efficient backend systems for static and dynamic websites using JavaScript and server-side technologies
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="card">
+						<div class="card-body text-md-start text-center">
+							<img src="https://img.icons8.com/fluency/64/000000/database.png" alt="service"
+								class="img-fluid mb-4" />
+							<h3>Database Management</h3>
+							<p>
+								Managing DataBase such as Mongo DB, MySQL
+								with Javascript and Node.Js.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="card">
+						<div class="card-body text-md-start text-center">
+							<img src="https://img.icons8.com/stickers/64/000000/api-settings.png" alt="service"
+								class="img-fluid mb-4" />
+							<h3>Rest API Creation</h3>
+							<p>
+								Creating Rest API's for various purposes
+								using Frameworks like Express.Js in
+								JavaScript.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="card">
+						<div class="card-body text-md-start text-center">
+							<img src="https://img.icons8.com/office/64/000000/rocket.png" alt="service"
+								class="img-fluid mb-4" />
+							<h3>Hosting / Deploying Apps</h3>
+							<p>
+								Hoisting websites and deploying Web using
+								 render, Netlify, Vercel, Heroku...
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Services section exit -->
+
+	<!-- Projects Section -->
+	<section id="projects" class="projects_wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<span class="subtitle">What I have done</span>
+					<h2>My Latest Projects</h2>
+					<p>
+						Here are some of my projects i have done in my free
+						time.<br class="d-none d-md-block" />These are
+						mostly personal projects and are maintained
+						regularly.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="card p-0">
+						<a href="https://github.com/vijay3014/Emart_backEnd_typeScript/tree/main/EMART_PROJECT" target="_blank" rel="noopener noreferrer">
+							<img class="card-img-top"
+								src="/assets/image/Screenshot 2024-12-27 164710.png" />
+							<div class="card-body">
+								<h3 class="text-center">Emart</h3>
+								<p>
+									eMart is a backend e-commerce platform built with Node.js, handling product management, secure checkout, user authentication, and order processing. It integrates secure payment gateways and provides an admin panel for inventory and order control.
+								</p>
+							</div>
+						</a>
+						<!-- card-body -->
+					</div>
+					<!-- card -->
+				</div>
+
+				<div class="col-sm-4">
+					<div class="card p-0">
+						<a href="https://github.com/vijay3014/combine_WEB/tree/main/Ecomall-Back-End" target="_blank"
+							rel="noopener noreferrer">
+							<img class="card-img-top img-fluid"
+								src="./assets/image/Screenshot 2024-12-27 170202.png" alt="Card image cap" />
+							<div class="card-body">
+								<h3 class="text-center">Ecomall</h3>
+								<p>
+									ecomall website built with Node.js provides a robust platform for online shopping, utilizing Node.js for fast backend processing and seamless user experience. It supports product management, payment integration, and customer interactions with real-time capabilities.
+								</p>
+							</div>
+						</a>
+						<!-- card-body -->
+					</div>
+					<!-- card -->
+				</div>
+
+				<div class="col-sm-4">
+					<div class="card p-0">
+						<a href="https://github.com/vijay3014/furniture-" target="_blank"
+							rel="noopener noreferrer">
+							<img class="card-img-top img-fluid"
+								src="./assets/image/Screenshot 2024-12-27 165514.png"
+								alt="Card image cap" />
+							<div class="card-body">
+								<h3 class="text-center">Furniture</h3>
+								<p>
+									A furniture application built with Node.js and Express.js allows users to browse, filter, and purchase furniture online. It handles backend logic, including data storage and user interactions, via a RESTful API.
+								</p>
+							</div>
+						</a>
+						<!-- card-body -->
+					</div>
+					<!-- card -->
+				</div>
+				<div class="mt-5 text-center">
+					<a class="main-btn" target="_blank" href="https://github.com/darshan0102?tab=repositories"
+						rel="noopener noreferrer">Load More ...</a>
+				</div>
+			</div>
+		</div>
+	</section>
+  
+	<!-- Certifications -->
+	<section id="certification" class="certification_wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<span class="subtitle">How do I qualify?</span>
+					<h2>My Bonafides</h2>
+					<p>
+						I have received certificates for successfully completing courses from SkillQode.
+					</p>
+				</div>
+			</div>
+			<div id="certification-carosel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active" data-bs-interval="2000">
+							<img src="/assets/image/20241227_175227.jpg"
+								class="d-block w-100" alt="Crash Course on Python"
+								title="Crash Course on FullStack - SkillQode" />
+						</a>
+					</div>
+				</div>
+	</section>
+
+	<!-- Footer section -->
+	<section id="footer" class="footer_wrapper">
+		<div class="container d-flex flex-column align-items-center">
+			<div class="col-lg-4 col-md-6">
+				<ul class="list-unstyled d-flex justify-content-center justify-content-lg-center social-icon">
+					<li>
+						<a href="https://github.com/darshan0102" aria-label="github link">
+							<i class="fab fa-github"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/__darshan__.__" aria-label="instagram link">
+							<i class="fab fa-instagram"></i></a>
+					</li>
+					<li>
+						<a href="https://twitter.com" aria-label="twitter link">
+							<i class="fab fa-twitter"></i></a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in" aria-label="linkedin link">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-4 col-md-12">
+				<div class="copyright-text text-center mb-3 mb-lg-0">
+					<p class="mb-0">
+						Copyright ©<span id="year"></span>
+						<a href="">Darshan M chauhan</a>.<br class="d-none d-md-block" />
+						All Rights Reserved.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- For Typing animation -->
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!-- Custom scripts -->
+	<script src="assets/js/script.js" async></script>
+	<script src="assets/js/github.js" async></script>
+	<!-- Google analytics -->
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9K7W7483CC"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag("js", new Date());
+
+		gtag("config", "G-9K7W7483CC");
+	</script>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<!-- Bootstrap based -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
